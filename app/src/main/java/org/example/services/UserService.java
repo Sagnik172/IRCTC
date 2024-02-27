@@ -43,7 +43,7 @@ public class UserService {
     public Optional<User> loginUser()
     {
         Optional<User> op=userList.stream().filter(user->{
-           return user.getName().equals(this.user.getName()) && user.getPassword().equals(this.user.getPassword());
+           return user.getName().equals(this.user.getName()) && UserServiceUtil.checkPassword(this.user.getPassword(),user.getHashedPassword());
         }).findFirst();
         return op;
     }

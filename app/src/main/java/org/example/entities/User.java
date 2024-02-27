@@ -59,9 +59,9 @@ public class User {
         this.ticketsBooked = ticketsBooked;
     }
 
-//    public String getHashedPassword() {
-//        return hashedPassword;
-//    }
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
     public void printTickets()
     {
         System.out.println("Your booked tickets are :");

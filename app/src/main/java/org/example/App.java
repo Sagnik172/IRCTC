@@ -90,8 +90,8 @@ public class App {
             System.out.println("Something went wrong 4");
             return;
         }
-       System.out.println(user.getUserId());
-       System.out.println(user.getName());
+       System.out.println("User id->"+user.getUserId());
+       System.out.println("User name->"+user.getName());
 
        int choice2=0;
        while(choice2!=5)
